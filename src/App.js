@@ -1,6 +1,6 @@
 import data from "./data.json";
-// import { useState } from "react";
 import "./App.css";
+import MenuItem from "./Components/Menu-Item/index-menu-item";
 function App() {
   // Find non-special category objects ...
   let categories = data.filter((obj) => {
@@ -26,8 +26,17 @@ function App() {
       });
     }
   });
-  console.log(categories);
-  return null;
+  console.log(orderedCategories);
+  // pass the data to the component and render structure
+  return (
+    <>
+      <div className="wrapper">
+        <div className="accordion">
+          <MenuItem data={orderedCategories} />
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default App;

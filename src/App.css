@@ -10,29 +10,3 @@
 .accordion {
   width: 250px;
 }
-.item {
-  background: #f0ebe1;
-  margin-bottom: 5px;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-.category {
-  color: #85662b;
-  font-size: 12px;
-}
-
-.subCategory {
-  color: #8b7f75;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-  font-size: 9px;
-}
-.subCategory.show {
-  height: auto;
-  max-height: 9999px;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-}
